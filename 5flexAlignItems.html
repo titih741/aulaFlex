@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align items</title>
+
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: wheat;
+            text-align: center;
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .flex{
+            flex: 1;
+        }
+        .strech{
+            align-items: stretch;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+        .central .item{
+            flex: 0;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+
+    <h1>Center</h1>
+    <section class="container center flex">
+        <div class="item">item 1</div>
+        <div class="item">mamae mandou eu escolher esse</div>
+        <div class="item">3 é numero maior que 2</div>
+    </section>
+
+    <h1>Strech</h1>
+    <section class="container center strech">
+        <div class="item">item 1</div>
+        <div class="item">mamae mandou eu escolher esse</div>
+        <div class="item">3 é numero maior que 2</div>
+    </section>
+
+    <h1>Flex-start</h1>
+    <section class="container center start">
+        <div class="item">item 1</div>
+        <div class="item">mamae mandou eu escolher esse</div>
+        <div class="item">3 é numero maior que 2</div>
+    </section>
+
+    <h1>Flex-end</h1>
+    <section class="container center end">
+        <div class="item">item 1</div>
+        <div class="item">mamae mandou eu escolher esse</div>
+        <div class="item">3 é numero maior que 2</div>
+    </section>
+
+    <h1>baseline</h1>
+    <section class="container center baseline">
+        <div class="item"><br>item 1</div>
+        <div class="item">mamae mandou eu escolher esse</div>
+        <div class="item">3 é numero maior que 2</div>
+    </section>
+
+    <h1>Columns</h1>
+
+    <h1>Flex-start(column)</h1>
+    <section class="container start column">
+        <div class="item">item 1</div>
+        <div class="item">mamae mandou eu escolher esse</div>
+        <div class="item">3 é numero maior que 2</div>
+    </section>
+
+    <h1>Flex-end(column)</h1>
+    <section class="container end column">
+        <div class="item">item 1</div>
+        <div class="item">mamae mandou eu escolher esse</div>
+        <div class="item">3 é numero maior que 2</div>
+    </section>
+
+    <h1>center(column)</h1>
+    <section class="container center column">
+        <div class="item">item 1</div>
+        <div class="item">mamae mandou eu escolher esse</div>
+        <div class="item">3 é numero maior que 2</div>
+    </section>
+
+    <h1>baseline(column)</h1>
+    <section class="container center baseline column">
+        <div class="item"><br>item 1</div>
+        <div class="item">mamae mandou eu escolher esse</div>
+        <div class="item">3 é numero maior que 2</div>
+    </section>
+    
+    <h1>alinhamento central à tela</h1>
+    <section class="container central center">
+        <div class="item">era uma vez um lugarzinho no meio do nada com sabor de chocolate</div>
+    </section>
+</body>
+</html>
